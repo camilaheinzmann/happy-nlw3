@@ -4,11 +4,11 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import { LeafletMouseEvent } from "leaflet";
 import { useHistory } from "react-router";
 
-import "../styles/pages/create-orphanage.css";
+import "./styles.css";
 
-import Sidebar from "../components/Sidebar";
-import mapIcon from "../utils/mapIcon";
-import api from "../services/api";
+import Sidebar from "../../components/Sidebar";
+import mapIcon from "../../utils/mapIcon";
+import api from "../../services/api";
 
 export default function CreateOrphanage() {
   const history = useHistory();

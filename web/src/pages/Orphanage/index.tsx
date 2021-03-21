@@ -1,13 +1,12 @@
-import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import { useParams } from "react-router-dom";
-import "../styles/pages/orphanage.css";
-import Sidebar from "../components/Sidebar";
+import "./styles.css";
+import Sidebar from "../../components/Sidebar";
 
-import mapIcon from "../utils/mapIcon";
+import mapIcon from "../../utils/mapIcon";
 import { useEffect, useState } from "react";
-import api from "../services/api";
+import api from "../../services/api";
 
 interface Orphanage {
   latitude: number;
@@ -134,11 +133,6 @@ export default function Orphanage() {
                 </div>
               )}
             </div>
-
-            {/* <button type="button" className="contact-button">
-              <FaWhatsapp size={20} color="#fff" />
-              Entrar em contato
-            </button> */}
           </div>
         </div>
       </main>
